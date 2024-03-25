@@ -1,0 +1,584 @@
+/* Importando a fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100&display=swap');
+
+:root {
+    --color-primary: #00cf84;
+    --color-primary2: #007786;
+    --color-secundary2: #43144E;
+    --color-secundary: #7650b5;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-font: #ffffff;
+    --color-dark: #000000;
+    --color-background: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-background);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-texto);
+    overflow-x: hidden;
+}
+
+p{
+    color: #dbd4d4;
+    font-size: 18px;
+    font-weight: 400;
+}
+.header {
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    padding: 15px 18px !important;
+}
+
+.navbar-brand.logo.text-uppercase {
+    font-size: 30px !important;
+    color: var(--color-primary) !important;
+    font-weight: 400;
+}
+
+.navbar-toggler{
+    color: transparent !important;
+}
+
+.navbar-toggler-icon {
+    color: var(--color-primary);
+}
+
+.nav-item .nav-link {
+    color: var(--color-font);
+    font-size: 20px;
+    font-weight: 200;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to right, #007786, #00CF84);
+    transition: width 0.5s ease-in-out;
+}
+
+.nav-item:hover .nav-link::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: white !important;
+}
+
+.nav-item .nav-link:hover {
+    color: var(--color-secundary) !important;
+}
+
+
+.WelcomeButton {
+    position: relative;
+    height: 40px;
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 5px;
+    background: transparent;
+
+}
+
+.WelcomeButton .welcome {
+    color: #fff;
+    font-size: 15px;
+    z-index: 1;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.WelcomeButton span{
+    color: #00CF84;
+    background: transparent;
+}
+
+.ProfileCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 2px solid #00CF84; /* Adiciona uma borda de 2 pixels com cor cinza (#ccc) */
+}
+
+.ProfileCircle img {
+    width: 100%;
+    height: auto;
+}
+
+.bnt-navbar {
+    display: inline-block;
+    padding: 10px 43px;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(to right, #7650b5, #43144E);
+    position: relative;
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+.bnt-navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #7650b5, #00cf84);
+    border-image-slice: 1;
+    border-radius: 50px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+/* Home */
+
+.content-home2{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-container2{
+    margin-top: 120px;
+}
+
+.home-text{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 74px;
+    color: #fff;
+}
+
+.para-home{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    max-width: 400px;
+    line-height: 24px;
+    margin: 14px 0px;
+}
+
+.home-links{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid linear-gradient(to right, #007786,#00CF84);
+    background: linear-gradient(to right, #007786,#00CF84);
+    margin: 20px 0px;
+    margin-right: 7px;
+    border-radius: 50px;
+    padding: 10px 37px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.home-links:hover {
+    transform: scale(1.07); /* Ajuste o fator de escala conforme necessário */
+    transition: width 0.5s ease-in-out;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column; /* Organize os elementos em uma coluna */
+    justify-content: center; /* Alinhe os elementos verticalmente no centro */
+    align-items: flex-start; /* Alinhe os elementos à esquerda */
+
+    margin-left: 180px;
+    margin-top: 20px;
+    width: 50%;
+    height: 220px;
+    border: none;
+    background: linear-gradient(to right, #7650b5, #5e1c6d);
+    border-radius: 20px;
+    padding: 20px; /* Adicionei um padding para afastar o conteúdo das bordas */
+}
+
+.card1 img {
+    display: flex;
+    background: none;
+    width: 60px;
+    height: 40px;
+    align-self: flex-end; /* Alinhe a imagem à direita */
+}
+
+.namecard {
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-align: center; /* Centralize o texto */
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+.numbercard {
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 10px; /* Ajuste conforme necessário */
+}
+
+.cvv-container {
+    position: relative;
+    width: 60px;
+    height: 40px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.cvv-hidden {
+    color: rgb(255, 255, 255);
+    display: none;
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+.cvv-visible {
+    color: rgb(255, 255, 255);
+    display: block;
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+
+
+.textcard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Alterado para centralizar verticalmente */
+    margin-top: 90px; /* Ajuste conforme necessário para mover para baixo */
+}
+
+.sobcard {
+    color: #00cf84;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-right: 230px; /* Adicione margem direita para espaçamento entre os elementos */
+}
+
+.sobcard_p {
+    text-decoration: none;
+    font-weight: 200;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.home-span {
+    color: #007786;
+}
+
+.btn-2{
+    background: linear-gradient(to right, #43144E,#7650b5);
+}
+
+.title-analytic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0px 0px 0px; /*superior, direita, inferior, esquerda*/
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    max-width: 650px;
+    line-height: 35px;
+    text-align: center;
+}
+
+#wordContainer {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: -20px;
+    background: linear-gradient(to right,
+    #7650b5 15%,
+    #00CF84 25%,
+    #9c40b1 50%,
+    #007786 100%
+);
+
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 20px;
+    animation: gradientChange 5s infinite linear;
+  }
+
+  @keyframes gradientChange {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+
+
+.box-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 40px;
+
+}
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    background-color: rgba(45, 45, 45, 1);
+    border-radius: 20px;
+    overflow: hidden; /* Adicionado overflow para esconder o overflow do ::before */
+}
+
+.container .card::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    background: radial-gradient(var(--clr, #fff), transparent, transparent);
+    width: 700px;
+    height: 700px;
+    opacity: 0;
+    transition: 0.5s, top 0s, left 0s;
+}
+
+.container .card:hover::before {
+    opacity: 1;
+}
+
+.container .card::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border-radius: 18px;
+    background: rgba(45, 45, 45, 0.9);
+
+}
+
+.text-card{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 25px;
+    max-width: 300px;
+    padding: 60px 15px 0px 30px; /*superior, direita, inferior, esquerda*/
+    text-align: center;
+    background: none;
+    z-index: 2;
+}
+
+
+.text-card2{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 25px;
+    justify-content: center;
+    padding: 90px 5px 0px 5px; /*superior, direita, inferior, esquerda*/
+    text-align: center;
+    background: none;
+    z-index: 2;
+}
+
+.title-card{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    background: linear-gradient(to right, #00CF84, #007786);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 20px;
+    animation: gradientChange 5s infinite linear;
+  }
+
+  @keyframes gradientChange {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+
+
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    .content-home2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-home {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .home-text {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .para-home {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .home-links {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .home-text,
+    .para-home,
+    .home-links {
+        margin-bottom: 20px;
+    }
+    .card1 {
+        width: 90%;
+        height: 160px;
+        margin-left: 30px;
+    }
+
+    .card1 img {
+        margin-top: 15px;
+        width: 40px;
+        height: 25px; /* Ajuste a altura conforme necessário */
+    }
+    .namecard {
+        font-size: 16px;
+    }
+    .numbercard {
+         font-size: 13px;
+    }
+    .cvv {
+        font-size: 13px;
+    }
+
+    .sobcard {
+        font-size: 16px;
+        margin-right: 250px;
+    }
+
+    .textcard {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .sobcard_p {
+        font-size: 16px;
+        margin-right: 260px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-home2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-home {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .home-text {
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .para-home {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-home {
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+    .home-text,
+    .para-home,
+    .home-links {
+        margin-bottom: 20px;
+    }
+    .card1 {
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    .card1 img {
+        width: 40px;
+        height: 25px; /* Ajuste a altura conforme necessário */
+    }
+
+    .sobcard {
+        font-size: 16px;
+        margin-right: 250px;
+    }
+
+    .textcard {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .sobcard_p {
+        font-size: 16px;
+        margin-right: 250px;
+    }
+}/* Estilos para dispositivos móveis com largura de tela de até 600 pixels */
+
